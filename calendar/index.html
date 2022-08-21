@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendar - Mini project JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calendar">
+        <p id="monthname"></p>
+        <p id="dayname"></p>
+        <p id="daynumber"></p>
+        <p id="year"></p>
+    </div>
+    <script text="javascript">
+        const lang  = navigator.language;
+        let date = new Date();
+
+        let dayname = date.toLocaleString(lang,{weekday:'long'});
+        let daynumber = date.getDate();
+        let month = date.getMonth();
+        let monthname = date.toLocaleString(lang,{month:'long'});
+        let year = date.getFullYear();
+
+        document.getElementById('monthname').innerHTML = monthname;
+        document.getElementById('dayname').innerHTML = dayname;
+        document.getElementById('daynumber').innerHTML = daynumber;
+        document.getElementById('year').innerHTML = year;
+    </script>
+</body>
+
+</html>

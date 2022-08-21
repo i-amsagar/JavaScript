@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #313131;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #3f3f3f;
+    border-radius: 25px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 50px solid #2b7be4;
+    border-right: 48px solid #2b7be4;
+}
+
+.card.active::before {
+    border: 20px solid transparent;
+    border-top: 50px solid #0919f0;
+    border-right: 48px solid #0919f0;
+}
+
+.icon {
+    margin-bottom: 10px;
+}
+
+.icon img {
+    max-width: 228px;
+}
+
+.card.active .content {
+    height: auto;
+}
+
+.content {
+    position: relative;
+    height: 215px;
+    overflow: hidden;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(transparent, #3f3f3f);
+}
+
+.card.active .content::before {
+    display: none;
+}
+
+.content h3 {
+    color: #17e78c;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #ccc;
+    font-weight: 300;
+}
+
+.card .more {
+    position: relative;
+    padding: 10px 15px;
+    background: #1771e7;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #383838;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card.active .more {
+    background: #0919f0;
+    color: #fff;
+}
+
+.card .more::before {
+    content: 'Read More';
+}
+
+.card.active .more::before {
+    content: 'Read Less';
+}
+
+.card a:hover {
+    font-size: 14px;
+    border: 1px solid #e8eff7;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+i {
+    display: inline-block;
+    padding: 20px;
+    margin-left: -5px;
+    margin-top: 2px;
+}
+
+.fa {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.fa-twitter {
+    color: #0084b4;
+}
+
+.fa-facebook {
+    color: #3b5995;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-youtube {
+    color: #ff0000;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More And Less More Button Using JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="img/img1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Payment Form Using HTML & CSS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolorem doloribus, atque consectetur
+                    incidunt et reprehenderit cum, aliquam eaque inventore maxime excepturi doloremque adipisci. Soluta,
+                    saepe. Illo quasi nulla delectus?
+                    Ipsa quasi cum, nesciunt vel facilis aliquid ipsam ipsum excepturi dignissimos minima tenetur
+                    incidunt, maxime repellendus omnis quisquam placeat cumque officiis totam. Beatae iste debitis rem
+                    quasi asperiores nemo quae?</p>
+            </div>
+            <a class="more"></a>
+            <br>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="img/img2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Background Color Change Using CSS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolorem doloribus, atque consectetur
+                    incidunt et reprehenderit cum, aliquam eaque inventore maxime excepturi doloremque adipisci. Soluta,
+                    saepe. Illo quasi nulla delectus?
+                    Ipsa quasi cum, nesciunt vel facilis aliquid ipsam ipsum excepturi dignissimos minima tenetur
+                    incidunt, maxime repellendus omnis quisquam placeat cumque officiis totam. Beatae iste debitis rem
+                    quasi asperiores nemo quae?</p>
+            </div>
+            <a class="more"></a>
+            <br>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="img/img3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Employee Project Uisng Cpp</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolorem doloribus, atque consectetur
+                    incidunt et reprehenderit cum, aliquam eaque inventore maxime excepturi doloremque adipisci. Soluta,
+                    saepe. Illo quasi nulla delectus?
+                    Ipsa quasi cum, nesciunt vel facilis aliquid ipsam ipsum excepturi dignissimos minima tenetur
+                    incidunt, maxime repellendus omnis quisquam placeat cumque officiis totam. Beatae iste debitis rem
+                    quasi asperiores nemo quae?</p>
+            </div>
+            <a class="more"></a>
+            <br>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="img/img4.png" alt="">
+            </div>
+            <div class="content">
+                <h3>YouTube Skeleton Loading Using CSS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolorem doloribus, atque consectetur
+                    incidunt et reprehenderit cum, aliquam eaque inventore maxime excepturi doloremque adipisci. Soluta,
+                    saepe. Illo quasi nulla delectus?
+                    Ipsa quasi cum, nesciunt vel facilis aliquid ipsam ipsum excepturi dignissimos minima tenetur
+                    incidunt, maxime repellendus omnis quisquam placeat cumque officiis totam. Beatae iste debitis rem
+                    quasi asperiores nemo quae?</p>
+            </div>
+            <a class="more"></a>
+            <br>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+    </div>
+
+    <script>
+        let more = document.querySelectorAll('.more');
+        for (let i = 0; i < more.length; i++) {
+            more[i].addEventListener('click', function () {
+                more[i].parentNode.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+
+</html>

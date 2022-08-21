@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #250a3c;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: -1px -1px 2px #e1e1ff40, inset 2px 2px 5px #e1e1ff40, 8px 30px 30px #00000066, inset -2px -2px 5px #0000004d;
+    border-radius: 10px;
+}
+
+.container .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    box-shadow: -1px -1px 2px #e1e1ff40, inset 2px 2px 5px #e1e1ff40, 8px 30px 30px #00000066, inset -2px -2px 5px #0000004d;
+    padding-right: 10px;
+    transition: 0.5s;
+    padding-right: 24px;
+}
+
+.container:hover .skills {
+    filter: blur(0px);
+    opacity: 0.2;
+}
+
+.container .skills:hover {
+    filter: blur(0px);
+    opacity: 1;
+}
+
+.skills h3 {
+    min-width: 180px;
+    text-align: right;
+    padding-right: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.skills .rating {
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    flex-direction: row-reverse;
+}
+
+.skills .rating input {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 20px;
+    height: 40px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.skills .rating input::before {
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 34px;
+    left: 4px;
+    color: #18516d;
+    transition: 0.5s;
+}
+
+.skills .rating input:nth-child(2n+1):before {
+    right: 4px;
+    left: initial;
+}
+
+.skills .rating input:hover~input::before, .skills .rating input:hover::before, .skills .rating input:checked~input::before, .skills .rating input:checked::before {
+    color: #1f9cff;
+}
